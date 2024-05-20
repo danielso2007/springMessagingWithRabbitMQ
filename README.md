@@ -1,3 +1,5 @@
+[![Teste do projeto](https://github.com/danielso2007/springMessagingWithRabbitMQ/actions/workflows/maven-publish.yml/badge.svg)](https://github.com/danielso2007/springMessagingWithRabbitMQ/actions/workflows/maven-publish.yml)
+
 # springMessagingWithRabbitMQ
 Messaging with RabbitMQ
 
