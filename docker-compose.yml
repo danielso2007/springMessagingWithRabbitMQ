@@ -1,0 +1,16 @@
+services:
+  rabbitmq:
+    image: rabbitmq:3.12.14-management-alpine
+    container_name: rabbitmq-spring
+    ports:
+      - "5672:5672"  # Porta para o protocolo AMQP
+      - "15672:15672" # Porta para a interface de gerenciamento
+    environment:
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: guest
+      RABBITMQ_DEFAULT_VHOST: my_vhost
+    volumes:
+      - rabbitmq_data:/var/lib/rabbitmq
+
+volumes:
+  rabbitmq_data:
